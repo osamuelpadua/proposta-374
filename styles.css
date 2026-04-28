@@ -59,10 +59,11 @@ a {
 
 .topbar-contact {
   display: grid;
-  justify-items: start;
+  justify-items: center;
   gap: 1px;
   font-size: 0.9rem;
   line-height: 1.35;
+  text-align: center;
 }
 
 .topbar-contact a {
@@ -376,6 +377,8 @@ a {
 
   .topbar-contact {
     font-size: 0.84rem;
+    justify-items: center;
+    text-align: center;
   }
 
   .topbar-proposal {
