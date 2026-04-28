@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposta Comercial #374</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="topbar-brand">
+        <img class="logo" src="logo.svg" alt="Logotipo Samuel Pádua">
+      </div>
+      <div class="topbar-contact">
+        <a href="mailto:osamuelpadua@gmail.com">osamuelpadua@gmail.com</a>
+        <a class="site-link" href="https://www.samuelpadua.com.br">www.samuelpadua.com.br</a>
+      </div>
+      <div class="topbar-proposal">
+        <p class="proposal-code">Proposta <strong>#374</strong></p>
+        <p class="proposal-date">28.04.2026</p>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="hero">
+        <h1>Loja virtual em <span class="term-emph">WordPress</span> com <span class="term-emph">WooCommerce</span></h1>
+        <p class="intro">
+          Proposta para desenvolvimento de uma loja virtual com <strong>estrutura profissional</strong>, <strong>integração inicial com o <span class="term-emph">Bling</span></strong>,
+          organização do catálogo, configuração do fluxo de compra e adaptação para mobile e desktop.
+        </p>
+
+        <div class="meta">
+          <div>
+            <span>Cliente</span>
+            <strong>Yhago</strong>
+          </div>
+          <div>
+            <span>Data</span>
+            <strong>28.04.2026</strong>
+          </div>
+          <div>
+            <span>Prazo</span>
+            <strong>21 dias úteis</strong>
+          </div>
+        </div>
+
+        <div class="hero-note">
+          <span>Destaque</span>
+          Projeto estruturado para lançar a loja com apresentação profissional, operação organizada e experiência responsiva.
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Sobre o projeto</h2>
+        <p>
+          A loja será desenvolvida em <span class="term-emph">WordPress</span> com <span class="term-emph">WooCommerce</span>, pronta para vender online de forma prática e profissional.
+          A solução inclui <strong>integração inicial com o <span class="term-emph">Bling</span></strong>, permitindo gerenciar produtos, pedidos e estoque em um único lugar.
+        </p>
+        <p>
+          Também estão incluídos a organização das categorias, configuração do checkout, <strong>personalização visual da loja</strong>
+          e criação de banners iniciais para destacar produtos, promoções e fortalecer a identidade visual no lançamento.
+        </p>
+      </section>
+
+      <section class="block">
+        <div class="section-head">
+          <h2>Escopo do projeto</h2>
+          <span class="section-tag">Itens inclusos</span>
+        </div>
+        <ul class="simple-list">
+          <li>Configuração da loja em <span class="term-emph">WordPress</span> com <span class="term-emph">WooCommerce</span></li>
+          <li>Estruturação das páginas principais: home, produtos e carrinho</li>
+          <li>Cadastro e organização de categorias e vitrines</li>
+          <li>Integração inicial com o <span class="term-emph">Bling</span></li>
+          <li>Configuração do fluxo de compra, checkout e pedidos</li>
+          <li>Personalização visual e responsividade</li>
+          <li>Criação de banners iniciais para a loja</li>
+          <li>Treinamento inicial para cadastro de produtos e configurações da loja</li>
+        </ul>
+      </section>
+
+      <section class="grid-two">
+        <article class="block">
+          <h2>Investimento</h2>
+          <div class="price-line">
+            <span>Pagamento à vista</span>
+            <strong>R$ 2.100,00</strong>
+          </div>
+          <div class="price-line">
+            <span>Pagamento parcelado</span>
+            <strong>2x de R$ 1.050,00</strong>
+          </div>
+          <button class="note-box copy-box" type="button" data-copy="16982006729" aria-label="Copiar chave Pix 16982006729">
+            <span>Chave Pix</span>
+            <strong>16982006729</strong>
+            <small class="copy-hint">Clique para copiar</small>
+          </button>
+          <p class="muted">
+            Parcelamentos acima de 2x ficam sujeitos às taxas da plataforma de pagamento.
+          </p>
+        </article>
+
+        <article class="block">
+          <h2>Condições</h2>
+          <p>
+            O prazo total é de 21 dias úteis, iniciando após o pagamento total ou da primeira parcela e o envio das informações necessárias.
+          </p>
+          <p>
+            Após o pagamento, o comprovante pode ser enviado por WhatsApp ou e-mail.
+          </p>
+          <div class="info-callout">
+            <span>Início do projeto</span>
+            A execução começa após confirmação do pagamento e envio das informações necessárias.
+          </div>
+        </article>
+      </section>
+
+      <section class="block">
+        <h2>Observações</h2>
+        <ul class="simple-list">
+          <li>Custos de hospedagem, domínio e serviços externos não estão inclusos nesta proposta.</li>
+        </ul>
+        <p class="proposal-validity">
+          Esta proposta é válida até o dia <strong>01/05/2026</strong>.
+        </p>
+      </section>
+    </main>
+  </div>
+  <script>
+    (function () {
+      const copyBox = document.querySelector("[data-copy]");
+      if (!copyBox) return;
+
+      const originalHint = copyBox.querySelector(".copy-hint").textContent;
+
+      async function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          return;
+        }
+
+        const input = document.createElement("textarea");
+        input.value = text;
+        input.setAttribute("readonly", "");
+        input.style.position = "absolute";
+        input.style.left = "-9999px";
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        document.body.removeChild(input);
+      }
+
+      copyBox.addEventListener("click", async function () {
+        const text = copyBox.getAttribute("data-copy");
+        const hint = copyBox.querySelector(".copy-hint");
+
+        try {
+          await copyText(text);
+          hint.textContent = "Copiado";
+          copyBox.classList.add("is-copied");
+
+          window.setTimeout(function () {
+            hint.textContent = originalHint;
+            copyBox.classList.remove("is-copied");
+          }, 1800);
+        } catch (error) {
+          hint.textContent = "Não foi possível copiar";
+
+          window.setTimeout(function () {
+            hint.textContent = originalHint;
+          }, 2200);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
