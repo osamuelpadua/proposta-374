@@ -32,7 +32,7 @@ jobs:
           mkdir -p _site/377 _site/378
           cp index.html _site/index.html
           cp 377/index.html 377/styles.css 377/logo.svg 377/Proposta-377-GIO-Rudge-Ramos.pdf _site/377/
-          cp 378/index.html 378/styles.css 378/logo.svg _site/378/
+          cp 378/index.html 378/styles.css 378/logo.svg 378/logo-icon.svg 378/og.png _site/378/
 
       - name: Enviar arquivos para publicacao
         uses: actions/upload-pages-artifact@v4
