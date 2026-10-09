@@ -22,6 +22,28 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="logo-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // Microsoft Clarity. Abrir com ?eu marca este navegador como do Samuel (não registra); ?eu=0 desfaz.
+    (function () {
+      var owner = false;
+      try {
+        var q = new URLSearchParams(location.search);
+        if (q.has('eu')) {
+          if (q.get('eu') === '0') localStorage.removeItem('sp-owner');
+          else localStorage.setItem('sp-owner', '1');
+        }
+        owner = localStorage.getItem('sp-owner') === '1';
+      } catch (e) {}
+      if (owner) return;
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yv73ri0x1z");
+      window.clarity("set", "proposta", "378");
+      window.clarity("set", "cliente", "drgabrielgoncalves");
+    })();
+  </script>
 </head>
 <body>
   <main class="proposal">
@@ -136,6 +158,7 @@
 
       <div class="closing"><div><strong>Próximos passos</strong><ol class="steps"><li>Você escolhe a opção.</li><li>Envio o contrato e o link de pagamento.</li><li>Você envia os materiais e começamos a produção.</li></ol></div><a href="mailto:osamuelpadua@gmail.com">osamuelpadua@gmail.com</a></div>
       <footer class="page-footer"><a href="https://www.samuelpadua.com.br">samuelpadua.com.br</a><a href="https://wa.me/5516982006729">(16) 98200-6729</a><span>02 / 02</span></footer>
+      <p class="privacy-note">Esta página registra estatísticas de visualização.</p>
     </section>
   </main>
 </body>
