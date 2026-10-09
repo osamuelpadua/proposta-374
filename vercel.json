@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/", "destination": "https://www.samuelpadua.com.br", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/drgabrielgoncalves/", "destination": "/378/index.html" },
+    { "source": "/drgabrielgoncalves/:path+", "destination": "/378/:path+" }
+  ],
+  "headers": [
+    { "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+  ]
+}

@@ -1,0 +1,9 @@
+# Publica somente as propostas liberadas abaixo (uma linha ! por pasta)
+/*
+!/vercel.json
+!/378
+
+# Arquivos locais que nunca devem subir
+.vercel
+.env*
+.gitignore
