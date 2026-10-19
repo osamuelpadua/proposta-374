@@ -8,7 +8,9 @@
     { "source": "/drgabrielgoncalves/", "destination": "/378/index.html" },
     { "source": "/drgabrielgoncalves/:path+", "destination": "/378/:path+" },
     { "source": "/drrodrigoedragabi/", "destination": "/379/index.html" },
-    { "source": "/drrodrigoedragabi/:path+", "destination": "/379/:path+" }
+    { "source": "/drrodrigoedragabi/:path+", "destination": "/379/:path+" },
+    { "source": "/drrodrigoedragabi-funcionalidades/", "destination": "/380/index.html" },
+    { "source": "/drrodrigoedragabi-funcionalidades/:path+", "destination": "/380/:path+" }
   ],
   "headers": [
     { "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }

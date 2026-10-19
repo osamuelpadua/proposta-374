@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Análise das funcionalidades do Clint e do Feegow: o que já está pronto, o que será construído e um plano em quatro etapas. Por Samuel Pádua, Product Designer.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#414141">
+  <title>Análise de funcionalidades · Dr. Rodrigo e Dra. Gabi</title>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Samuel Pádua · Product Designer">
+  <meta property="og:url" content="https://proposta.samuelpadua.com.br/drrodrigoedragabi-funcionalidades/">
+  <meta property="og:title" content="Análise de funcionalidades · Dr. Rodrigo e Dra. Gabi">
+  <meta property="og:description" content="Análise das funcionalidades do Clint e do Feegow: o que já está pronto, o que será construído e um plano em quatro etapas. Por Samuel Pádua, Product Designer.">
+  <meta property="og:image" content="https://proposta.samuelpadua.com.br/drrodrigoedragabi-funcionalidades/og-share.png">
+  <meta property="og:image:secure_url" content="https://proposta.samuelpadua.com.br/drrodrigoedragabi-funcionalidades/og-share.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Samuel Pádua · Product Designer">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="logo-icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&text=MKBZSTUDIO&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Microsoft Clarity. Abrir com ?eu marca este navegador como do Samuel (não registra); ?eu=0 desfaz.
+    (function () {
+      var owner = false;
+      try {
+        var q = new URLSearchParams(location.search);
+        if (q.has('eu')) {
+          if (q.get('eu') === '0') localStorage.removeItem('sp-owner');
+          else localStorage.setItem('sp-owner', '1');
+        }
+        owner = localStorage.getItem('sp-owner') === '1';
+      } catch (e) {}
+      if (owner) return;
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yv73ri0x1z");
+      window.clarity("set", "proposta", "380");
+      window.clarity("set", "cliente", "drrodrigoedragabi");
+    })();
+  </script>
+</head>
+<body>
+  <main class="proposal">
+    <section class="sheet overview" aria-labelledby="proposal-title">
+      <header class="brand-row">
+        <div class="brand-logos">
+          <a href="https://www.samuelpadua.com.br" aria-label="Samuel Pádua — site profissional"><img src="logo.svg" width="220" height="43" alt="Samuel Pádua"></a>
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="partner-brand" role="img" aria-label="MKBZ Studio">MKBZ<span>STUDIO</span></span>
+        </div>
+        <div class="document-id"><span>ANÁLISE DE FUNCIONALIDADES</span><strong>#380 <span>·</span> 19.10.2026</strong></div>
+      </header>
+
+      <div class="hero">
+        <p class="eyebrow">PARA DR. RODRIGO E DRA. GABI</p>
+        <h1 id="proposal-title">Do comercial à gestão da clínica.<br><span>Um sistema só, construído em etapas.</span></h1>
+        <p class="intro">Analisei, item a item, a lista que vocês enviaram: o que usam hoje no Clint, o que usam no Feegow e o que gostariam de ter. Aqui está o que o CRM da proposta #379 já faz, o que eu construiria e por onde começar.</p>
+      </div>
+
+      <section class="summary" aria-labelledby="summary-title">
+        <div class="section-heading"><span class="section-number">01</span><h2 id="summary-title">Resumo da análise</h2></div>
+        <div class="summary-grid">
+          <article class="summary-card">
+            <p class="plan-label">O QUE VOCÊS USAM NO CLINT</p>
+            <h3>Comercial</h3>
+            <p>Quase tudo já existe no CRM da proposta #379.</p>
+            <div class="meter" role="img" aria-label="2 prontos, 3 com base, 1 a construir"><span class="m-ok" style="flex-grow:2"></span><span class="m-base" style="flex-grow:3"></span><span class="m-novo" style="flex-grow:1"></span></div>
+            <p class="meter-legend"><span><i class="m-ok"></i>2 prontos</span><span><i class="m-base"></i>3 com base</span><span><i class="m-novo"></i>1 a construir</span></p>
+          </article>
+          <article class="summary-card">
+            <p class="plan-label">O QUE VOCÊS USAM NO FEEGOW</p>
+            <h3>Gestão da clínica</h3>
+            <p>Um segundo sistema, construído em etapas.</p>
+            <div class="meter" role="img" aria-label="4 com base, 8 a construir"><span class="m-base" style="flex-grow:4"></span><span class="m-novo" style="flex-grow:8"></span></div>
+            <p class="meter-legend"><span><i class="m-base"></i>4 com base</span><span><i class="m-novo"></i>8 a construir</span></p>
+          </article>
+          <article class="summary-card">
+            <p class="plan-label">O QUE VOCÊS GOSTARIAM DE TER</p>
+            <h3>Novidades</h3>
+            <p>Duas já existem no CRM. As outras três são construídas.</p>
+            <div class="meter" role="img" aria-label="1 pronto, 1 com base, 3 a construir"><span class="m-ok" style="flex-grow:1"></span><span class="m-base" style="flex-grow:1"></span><span class="m-novo" style="flex-grow:3"></span></div>
+            <p class="meter-legend"><span><i class="m-ok"></i>1 pronto</span><span><i class="m-base"></i>1 com base</span><span><i class="m-novo"></i>3 a construir</span></p>
+          </article>
+        </div>
+        <p class="feature-note"><strong>Como ler.</strong> <em class="status st-ok">Pronto</em> já funciona hoje. <em class="status st-base">Com base</em> parte já existe e eu completo. <em class="status st-novo">A construir</em> é desenvolvido do zero. Mensagens, confirmações e automações dependem da integração de WhatsApp, opcional na proposta #379.</p>
+      </section>
+
+      <section class="scope" aria-labelledby="crm-title">
+        <div class="section-heading"><span class="section-number">02</span><h2 id="crm-title">Comercial</h2><span class="section-badge">O QUE VOCÊS USAM NO CLINT</span></div>
+        <table class="delivery-table scope-table">
+          <caption class="sr-only">Funcionalidades do comercial: o que já existe, o que falta e a etapa</caption>
+          <thead><tr><th scope="col">Funcionalidade</th><th scope="col">O que já existe e o que falta</th><th scope="col">Situação</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Cadastro</th><td>Contatos entram pelo site, pelo WhatsApp e por anúncios do Facebook e do Instagram, com a campanha de origem. A equipe também cadastra à mão.</td><td><span class="status st-ok">Pronto</span><span class="stage">Etapa 1</span></td></tr>
+            <tr><th scope="row">Funil de vendas</th><td>Etapas visuais e editáveis, com campos obrigatórios em cada etapa, como data e valor da proposta.</td><td><span class="status st-ok">Pronto</span><span class="stage">Etapa 1</span></td></tr>
+            <tr><th scope="row">Campanhas (disparos)</th><td><strong>Hoje:</strong> modelos de mensagem e envios agendados um a um. <strong>Falta:</strong> envio para uma lista filtrada por etapa, tratamento ou origem.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 1</span></td></tr>
+            <tr><th scope="row">Automações</th><td><strong>Hoje:</strong> mensagens automáticas em sete momentos, do primeiro contato à reativação. <strong>Falta:</strong> mudar o paciente de etapa e marcar ganho ou perdido por regra.</td><td><span class="status st-base">Com base</span><span class="stage">Etapa 1</span></td></tr>
+            <tr><th scope="row">Indicadores</th><td><strong>Hoje:</strong> leads por etapa e por origem, faturamento, ticket médio e conversão por período. <strong>Falta:</strong> número de conversas, tempo de resposta, resultado por atendente e evolução mensal.</td><td><span class="status st-base">Com base</span><span class="stage">Etapa 1</span></td></tr>
+            <tr><th scope="row">Comunicação</th><td><strong>Hoje:</strong> WhatsApp dentro do CRM, com áudios, anexos, notas internas e resposta automática no primeiro contato. <strong>Falta:</strong> Instagram Direct e formulários de anúncio do Meta.</td><td><span class="status st-base">Com base</span><span class="stage">Etapa 1</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer class="page-footer"><span>SAMUEL PÁDUA · PRODUCT DESIGNER</span><span>01 / 04</span></footer>
+    </section>
+
+    <section class="sheet" aria-labelledby="clinic-title">
+      <header class="continuation"><span>DR. RODRIGO E DRA. GABI <b>/</b> FUNCIONALIDADES</span><span>ANÁLISE #380</span></header>
+
+      <section class="scope scope-first" aria-labelledby="clinic-title">
+        <div class="section-heading"><span class="section-number">03</span><h2 id="clinic-title">Gestão da clínica</h2><span class="section-badge">O QUE VOCÊS USAM NO FEEGOW</span></div>
+        <table class="delivery-table scope-table">
+          <caption class="sr-only">Funcionalidades de gestão da clínica: o que já existe, o que falta e a etapa</caption>
+          <thead><tr><th scope="col">Funcionalidade</th><th scope="col">O que já existe e o que falta</th><th scope="col">Situação</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Cadastro de pacientes</th><td><strong>Hoje:</strong> nome, WhatsApp, e-mail e histórico de contato. <strong>Falta:</strong> CPF, nascimento, endereço e anamnese.</td><td><span class="status st-base">Com base</span><span class="stage">Etapa 2</span></td></tr>
+            <tr><th scope="row">Agenda</th><td><strong>Hoje:</strong> avaliações por mês, semana e lista, com presença e Google Calendar. <strong>Falta:</strong> agenda por profissional e sala, sessões recorrentes, bloqueios e encaixes.</td><td><span class="status st-base">Com base</span><span class="stage">Etapa 2</span></td></tr>
+            <tr><th scope="row">Pacotes e sessões</th><td>Venda de pacote com contagem automática a cada atendimento: sessão 1 de 5, 2 de 5, e assim por diante.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 2</span></td></tr>
+            <tr><th scope="row">Espera na recepção</th><td>Quem chegou, quem está em atendimento e há quanto tempo cada paciente aguarda.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 2</span></td></tr>
+            <tr><th scope="row">Cadastro de funcionários</th><td><strong>Hoje:</strong> login próprio e nível de acesso para cada pessoa. <strong>Falta:</strong> especialidade, horários e comissão, cadastrados pela própria clínica.</td><td><span class="status st-base">Com base</span><span class="stage">Etapa 2</span></td></tr>
+            <tr><th scope="row">Procedimentos e pacotes</th><td><strong>Hoje:</strong> lista de tratamentos. <strong>Falta:</strong> preço, duração, número de sessões e montagem de pacotes.</td><td><span class="status st-base">Com base</span><span class="stage">Etapa 2</span></td></tr>
+            <tr><th scope="row">Financeiro</th><td>Caixa, extrato, saldos, DRE e faturamento. Baixa de cartões com a taxa e o prazo de cada bandeira e parcelamento.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 3</span></td></tr>
+            <tr><th scope="row">Repasses</th><td>Repasse de cada profissional, calculado a partir dos atendimentos e das regras de comissão da clínica.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 3</span></td></tr>
+            <tr><th scope="row">Estoque e almoxarifado</th><td>Entradas, saídas, estoque mínimo e aviso de reposição.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 3</span></td></tr>
+            <tr><th scope="row">Relatórios</th><td>Financeiro, sessões, agendamentos e taxa de ocupação.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 3</span></td></tr>
+            <tr><th scope="row">Prontuários e documentos</th><td>Evolução do paciente, documentos e imagens, com backup diário e controle de quem acessa cada informação.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 4</span></td></tr>
+            <tr><th scope="row">Resumo por IA</th><td>Gravação, transcrição e resumo do atendimento para o prontuário, com autorização do paciente.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 4</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer class="page-footer"><span>SAMUEL PÁDUA · PRODUCT DESIGNER</span><span>02 / 04</span></footer>
+    </section>
+
+    <section class="sheet" aria-labelledby="new-title">
+      <header class="continuation"><span>DR. RODRIGO E DRA. GABI <b>/</b> FUNCIONALIDADES</span><span>ANÁLISE #380</span></header>
+
+      <section class="scope scope-first" aria-labelledby="new-title">
+        <div class="section-heading"><span class="section-number">04</span><h2 id="new-title">Novidades</h2><span class="section-badge">O QUE VOCÊS GOSTARIAM DE TER</span></div>
+        <table class="delivery-table scope-table">
+          <caption class="sr-only">Funcionalidades novas: o que já existe, o que falta e a etapa</caption>
+          <thead><tr><th scope="col">Funcionalidade</th><th scope="col">O que já existe e o que falta</th><th scope="col">Situação</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Confirmações automáticas</th><td>Confirmação ao agendar, lembrete na véspera e segundo lembrete opcional no dia. Com a agenda completa, vale para todas as sessões.</td><td><span class="status st-ok">Pronto</span><span class="stage">Etapa 1</span></td></tr>
+            <tr><th scope="row">Aviso de manutenção</th><td><strong>Hoje:</strong> lista de reativação com prazo ajustável e mensagem automática. <strong>Ajuste:</strong> 3 meses, contados pela última sessão quando a agenda completa entrar.</td><td><span class="status st-base">Com base</span><span class="stage">Etapa 1</span></td></tr>
+            <tr><th scope="row">Lista de espera</th><td>Pacientes aguardando horário. Quando uma vaga abre, o sistema mostra quem está esperando por ela.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 2</span></td></tr>
+            <tr><th scope="row">Fichas de treino</th><td>Banco de exercícios com foto ou vídeo, ficha de cada paciente e envio pelo WhatsApp.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 2</span></td></tr>
+            <tr><th scope="row">Nota fiscal</th><td>Emissão de nota fiscal de serviço pelo próprio sistema, integrada a um emissor de notas.</td><td><span class="status st-novo">A construir</span><span class="stage">Etapa 3</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="plans stages" aria-labelledby="stages-title">
+        <div class="section-heading"><span class="section-number">05</span><h2 id="stages-title">Quatro etapas, cada uma em uso ao terminar</h2></div>
+        <div class="plan-grid">
+          <article class="plan managed">
+            <div class="plan-topline"><p class="plan-label">ETAPA 1</p><span class="included-badge">Substitui o Clint</span></div>
+            <h3>Comercial</h3>
+            <ul>
+              <li><strong>CRM da proposta #379</strong>, com WhatsApp integrado.</li>
+              <li>Campanhas e automações de etapa.</li>
+              <li>Novos indicadores e Instagram, opcional.</li>
+              <li>Confirmações e aviso de manutenção.</li>
+            </ul>
+            <div class="plan-bottom"><p><strong>Base pronta.</strong></p><p>Os complementos entram nesta etapa.</p></div>
+          </article>
+          <article class="plan">
+            <div class="plan-topline"><p class="plan-label">ETAPA 2</p><span class="plan-tag">Rotina da clínica</span></div>
+            <h3>Agenda e atendimento</h3>
+            <ul>
+              <li>Ficha do paciente, profissionais, tratamentos e pacotes.</li>
+              <li>Agenda por profissional e sala, com controle de sessões.</li>
+              <li>Recepção e lista de espera.</li>
+              <li>Fichas de treino.</li>
+            </ul>
+            <div class="plan-bottom"><p><strong>Substitui a agenda do Feegow.</strong></p></div>
+          </article>
+          <article class="plan">
+            <div class="plan-topline"><p class="plan-label">ETAPA 3</p><span class="plan-tag">Gestão</span></div>
+            <h3>Financeiro e estoque</h3>
+            <ul>
+              <li>Caixa, extrato, cartões, saldos, DRE e faturamento.</li>
+              <li>Repasses aos profissionais.</li>
+              <li>Estoque e almoxarifado.</li>
+              <li>Relatórios e nota fiscal.</li>
+            </ul>
+            <div class="plan-bottom"><p><strong>Substitui o financeiro do Feegow.</strong></p></div>
+          </article>
+          <article class="plan">
+            <div class="plan-topline"><p class="plan-label">ETAPA 4</p><span class="plan-tag">Dados de saúde</span></div>
+            <h3>Prontuário e IA</h3>
+            <ul>
+              <li>Prontuário com evolução, documentos e imagens.</li>
+              <li>Resumo do atendimento por IA.</li>
+              <li>Backup diário e controle de acesso.</li>
+            </ul>
+            <div class="plan-bottom"><p><strong>Conclui a saída do Feegow.</strong></p></div>
+          </article>
+        </div>
+        <p class="feature-note"><strong>Sem troca de uma vez.</strong> O Feegow continua em uso enquanto as etapas 2, 3 e 4 ficam prontas, e cada etapa entra em uso assim que é concluída.</p>
+      </section>
+
+      <footer class="page-footer"><span>SAMUEL PÁDUA · PRODUCT DESIGNER</span><span>03 / 04</span></footer>
+    </section>
+
+    <section class="sheet terms" aria-labelledby="terms-title">
+      <header class="continuation"><span>DR. RODRIGO E DRA. GABI <b>/</b> FUNCIONALIDADES</span><span>ANÁLISE #380</span></header>
+      <div class="terms-intro"><p class="eyebrow">ANTES DE DECIDIR</p><h2 id="terms-title">O que cada escolha envolve.</h2></div>
+
+      <section class="conditions conditions-first" aria-labelledby="attention-title">
+        <div class="section-heading"><span class="section-number">06</span><h2 id="attention-title">Pontos de atenção</h2></div>
+        <dl class="condition-list">
+          <div><dt>Disparos</dt><dd>Envio em massa pelo WhatsApp comum pode levar ao bloqueio do número. Para campanhas grandes, o caminho seguro é a API oficial do WhatsApp, cobrada por mensagem e com modelos aprovados pelo Meta.</dd></div>
+          <div><dt>Dados de saúde</dt><dd>Prontuário, imagens e gravações são dados sensíveis pela LGPD e seguem as regras do conselho profissional. A etapa 4 exige servidor dedicado, backup e controle de acesso, e por isso tem valor diferenciado.</dd></div>
+          <div><dt>Nota fiscal</dt><dd>Emitida por um emissor integrado, com mensalidade própria. Requer certificado digital A1 da clínica e configuração dos impostos com o contador. O layout segue o padrão oficial; a descrição do serviço é personalizada.</dd></div>
+          <div><dt>Instagram</dt><dd>Depende da aprovação do aplicativo pela Meta, que pode levar algumas semanas.</dd></div>
+          <div><dt>Serviços externos</dt><dd>WhatsApp, emissor de notas e IA são contratados e pagos por vocês, à parte. Informo os valores antes de cada contratação.</dd></div>
+        </dl>
+        <p class="contract-note">Prazo e valor de cada etapa serão apresentados em proposta própria.</p>
+      </section>
+
+      <div class="closing"><div><strong>Próximos passos</strong><p>Para fechar prazo e valor de cada etapa, me respondam:</p><ol class="steps"><li>Quantos profissionais e salas atendem hoje?</li><li>Vocês querem sair do Clint e do Feegow, ou manter o Feegow por enquanto?</li><li>Em qual cidade fica a clínica? A nota fiscal depende da prefeitura.</li><li>Quanto vocês investem hoje, por mês, no Clint e no Feegow?</li></ol></div><div class="validity"><span>EM SEGUIDA</span><strong>Prazo e valor</strong><small>de cada etapa, após as respostas</small></div></div>
+      <footer class="page-footer"><a href="https://www.samuelpadua.com.br">samuelpadua.com.br</a><a href="https://wa.me/5516982006729">(16) 98200-6729</a><span>04 / 04</span></footer>
+      <p class="privacy-note">Esta página registra estatísticas de visualização.</p>
+    </section>
+  </main>
+</body>
+</html>
