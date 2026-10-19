@@ -6,7 +6,9 @@
   ],
   "rewrites": [
     { "source": "/drgabrielgoncalves/", "destination": "/378/index.html" },
-    { "source": "/drgabrielgoncalves/:path+", "destination": "/378/:path+" }
+    { "source": "/drgabrielgoncalves/:path+", "destination": "/378/:path+" },
+    { "source": "/drrodrigoedragabi/", "destination": "/379/index.html" },
+    { "source": "/drrodrigoedragabi/:path+", "destination": "/379/:path+" }
   ],
   "headers": [
     { "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
