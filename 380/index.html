@@ -132,13 +132,7 @@
         </table>
       </section>
 
-      <footer class="page-footer"><span>SAMUEL PÁDUA · PRODUCT DESIGNER</span><span>02 / 04</span></footer>
-    </section>
-
-    <section class="sheet" aria-labelledby="new-title">
-      <header class="continuation"><span>DR. RODRIGO E DRA. GABI <b>/</b> FUNCIONALIDADES</span><span>ANÁLISE #380</span></header>
-
-      <section class="scope scope-first" aria-labelledby="new-title">
+      <section class="scope" aria-labelledby="new-title">
         <div class="section-heading"><span class="section-number">04</span><h2 id="new-title">Novidades</h2><span class="section-badge">O QUE VOCÊS GOSTARIAM DE TER</span></div>
         <table class="delivery-table scope-table">
           <caption class="sr-only">Funcionalidades novas: o que já existe, o que falta e a etapa</caption>
@@ -153,7 +147,13 @@
         </table>
       </section>
 
-      <section class="plans stages" aria-labelledby="stages-title">
+      <footer class="page-footer"><span>SAMUEL PÁDUA · PRODUCT DESIGNER</span><span>02 / 04</span></footer>
+    </section>
+
+    <section class="sheet" aria-labelledby="stages-title">
+      <header class="continuation"><span>DR. RODRIGO E DRA. GABI <b>/</b> FUNCIONALIDADES</span><span>ANÁLISE #380</span></header>
+
+      <section class="plans stages stages-first" aria-labelledby="stages-title">
         <div class="section-heading"><span class="section-number">05</span><h2 id="stages-title">Quatro etapas, cada uma em uso ao terminar</h2></div>
         <div class="plan-grid">
           <article class="plan managed">
@@ -197,10 +197,20 @@
               <li>Resumo do atendimento por IA.</li>
               <li>Backup diário e controle de acesso.</li>
             </ul>
-            <div class="plan-bottom"><p><strong>Conclui a saída do Feegow.</strong></p></div>
+            <div class="plan-bottom"><p><strong>Substitui o prontuário do Feegow.</strong></p></div>
           </article>
         </div>
         <p class="feature-note"><strong>Sem troca de uma vez.</strong> O Feegow continua em uso enquanto as etapas 2, 3 e 4 ficam prontas, e cada etapa entra em uso assim que é concluída.</p>
+      </section>
+
+      <section class="conditions" aria-labelledby="deps-title">
+        <div class="section-heading"><span class="section-number">06</span><h2 id="deps-title">Prazos e dependências</h2></div>
+        <dl class="condition-list">
+          <div><dt>Prazo</dt><dd>A etapa 1 parte de uma base pronta e é contada em semanas. As etapas 2, 3 e 4 são construídas do zero e são contadas em meses. Cada etapa é orçada e iniciada separadamente.</dd></div>
+          <div><dt>Aprovações da Meta</dt><dd>O Instagram Direct e os disparos pela API oficial do WhatsApp dependem de aprovação da Meta, que pode levar semanas e não é garantida.</dd></div>
+          <div><dt>Nota fiscal</dt><dd>Depende de um emissor que atenda a prefeitura de vocês, do certificado digital A1 da clínica e da configuração dos impostos com o contador. O layout segue o padrão oficial; a descrição do serviço é personalizada.</dd></div>
+          <div><dt>Serviços externos</dt><dd>WhatsApp, emissor de notas e IA são contratados e pagos por vocês, à parte, e têm prazos de liberação próprios. Informo os valores antes de cada contratação.</dd></div>
+        </dl>
       </section>
 
       <footer class="page-footer"><span>SAMUEL PÁDUA · PRODUCT DESIGNER</span><span>03 / 04</span></footer>
@@ -210,19 +220,20 @@
       <header class="continuation"><span>DR. RODRIGO E DRA. GABI <b>/</b> FUNCIONALIDADES</span><span>ANÁLISE #380</span></header>
       <div class="terms-intro"><p class="eyebrow">ANTES DE DECIDIR</p><h2 id="terms-title">O que cada escolha envolve.</h2></div>
 
-      <section class="conditions conditions-first" aria-labelledby="attention-title">
-        <div class="section-heading"><span class="section-number">06</span><h2 id="attention-title">Pontos de atenção</h2></div>
+      <section class="conditions conditions-first" aria-labelledby="limits-title">
+        <div class="section-heading"><span class="section-number">07</span><h2 id="limits-title">Limites e responsabilidades</h2></div>
         <dl class="condition-list">
-          <div><dt>Disparos</dt><dd>Envio em massa pelo WhatsApp comum pode levar ao bloqueio do número. Para campanhas grandes, o caminho seguro é a API oficial do WhatsApp, cobrada por mensagem e com modelos aprovados pelo Meta.</dd></div>
-          <div><dt>Dados de saúde</dt><dd>Prontuário, imagens e gravações são dados sensíveis pela LGPD e seguem as regras do conselho profissional. A etapa 4 exige servidor dedicado, backup e controle de acesso, e por isso tem valor diferenciado.</dd></div>
-          <div><dt>Nota fiscal</dt><dd>Emitida por um emissor integrado, com mensalidade própria. Requer certificado digital A1 da clínica e configuração dos impostos com o contador. O layout segue o padrão oficial; a descrição do serviço é personalizada.</dd></div>
-          <div><dt>Instagram</dt><dd>Depende da aprovação do aplicativo pela Meta, que pode levar algumas semanas.</dd></div>
-          <div><dt>Serviços externos</dt><dd>WhatsApp, emissor de notas e IA são contratados e pagos por vocês, à parte. Informo os valores antes de cada contratação.</dd></div>
+          <div><dt>Disparos</dt><dd>Envio em massa pelo WhatsApp comum pode levar ao bloqueio do número. Para campanhas grandes, o caminho seguro é a API oficial do WhatsApp, cobrada por mensagem e com modelos aprovados pela Meta.</dd></div>
+          <div><dt>Dados de saúde</dt><dd>Prontuário, imagens e gravações são dados sensíveis pela LGPD e seguem as regras do COFFITO. Para dispensar o prontuário em papel, pode ser exigida assinatura digital ICP-Brasil; confirmamos isso antes da etapa 4.</dd></div>
+          <div><dt>Resumo por IA</dt><dd>O resumo serve de rascunho, e o profissional revisa e aprova antes de salvar no prontuário. A gravação só acontece com autorização do paciente.</dd></div>
+          <div><dt>Financeiro</dt><dd>O sistema organiza caixa, DRE e faturamento, mas não substitui a contabilidade. A baixa de cartões é registrada com a taxa e o prazo de cada bandeira; a conciliação automática com a maquininha não está incluída.</dd></div>
+          <div><dt>Dados antigos</dt><dd>A migração do Clint e do Feegow é orçada à parte e depende do que cada sistema permite exportar. O que não puder ser migrado, como prontuários antigos, continua no Feegow para consulta.</dd></div>
+          <div><dt>Manutenção</dt><dd>Financeiro e prontuário exigem backup diário, atualizações de segurança e suporte contínuo depois da entrega, e por isso as etapas 3 e 4 têm valor diferenciado.</dd></div>
         </dl>
         <p class="contract-note">Prazo e valor de cada etapa serão apresentados em proposta própria.</p>
       </section>
 
-      <div class="closing"><div><strong>Próximos passos</strong><p>Para fechar prazo e valor de cada etapa, me respondam:</p><ol class="steps"><li>Quantos profissionais e salas atendem hoje?</li><li>Vocês querem sair do Clint e do Feegow, ou manter o Feegow por enquanto?</li><li>Em qual cidade fica a clínica? A nota fiscal depende da prefeitura.</li><li>Quanto vocês investem hoje, por mês, no Clint e no Feegow?</li></ol></div><div class="validity"><span>EM SEGUIDA</span><strong>Prazo e valor</strong><small>de cada etapa, após as respostas</small></div></div>
+      <div class="closing"><div><strong>Próximos passos</strong><p>Para fechar prazo e valor de cada etapa, me respondam:</p><ol class="steps"><li>Quantos profissionais e salas atendem hoje?</li><li>Vocês querem sair do Clint e do Feegow, ou manter o Feegow por enquanto?</li><li>Vocês precisam trazer o histórico do Feegow, como pacientes e prontuários?</li><li>Em qual cidade fica a clínica? A nota fiscal depende da prefeitura.</li><li>Quanto vocês investem hoje, por mês, no Clint e no Feegow?</li></ol></div><div class="validity"><span>EM SEGUIDA</span><strong>Prazo e valor</strong><small>de cada etapa, após as respostas</small></div></div>
       <footer class="page-footer"><a href="https://www.samuelpadua.com.br">samuelpadua.com.br</a><a href="https://wa.me/5516982006729">(16) 98200-6729</a><span>04 / 04</span></footer>
       <p class="privacy-note">Esta página registra estatísticas de visualização.</p>
     </section>

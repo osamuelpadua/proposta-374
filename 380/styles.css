@@ -372,7 +372,8 @@ h3 { font-size: 17px; line-height: 1.4; margin-bottom: 6px; }
 
 .brand-row + .summary { margin-top: 34px; }
 .summary + .scope { margin-top: 38px; }
-.scope-first { margin-top: 34px; }
+.scope-first, .stages-first { margin-top: 34px; }
+.scope + .scope { margin-top: 38px; }
 .scope-table th:first-child { width: 23%; }
 .scope-table th:last-child { width: 136px; }
 .scope-table td { font-size: 14.5px; }
@@ -390,7 +391,8 @@ h3 { font-size: 17px; line-height: 1.4; margin-bottom: 6px; }
   .scope .section-heading { flex-wrap: wrap; row-gap: 8px; }
   .brand-row + .summary { margin-top: 28px; }
   .summary + .scope { margin-top: 32px; }
-  .scope-first { margin-top: 28px; }
+  .scope-first, .stages-first { margin-top: 28px; }
+  .scope + .scope { margin-top: 32px; }
   .scope-table td { font-size: 14px; }
   .stages .plan ul { margin: 12px 0 16px; }
 }
@@ -407,7 +409,8 @@ h3 { font-size: 17px; line-height: 1.4; margin-bottom: 6px; }
   .stage { margin-top: 3px; font-size: 9.5px; }
   .brand-row + .summary { margin-top: 16px; }
   .summary + .scope { margin-top: 14px; }
-  .scope-first { margin-top: 14px; }
+  .scope-first, .stages-first { margin-top: 14px; }
+  .scope + .scope { margin-top: 14px; }
   .scope-table th:last-child { width: 100px; }
   .scope-table td { font-size: 11.5px; line-height: 1.45; }
   .scope-table tbody th { font-size: 12px; }
