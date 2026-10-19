@@ -20,6 +20,10 @@ strong { font-weight: 700; }
 .sheet + .sheet { margin-top: 24px; }
 .brand-row { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-bottom: 26px; border-bottom: 1px solid var(--line); }
 .brand-row img { display: block; width: 160px; height: auto; }
+.brand-logos { display: flex; align-items: center; gap: 18px; }
+.brand-divider { width: 1px; height: 30px; background: var(--line); }
+.partner-brand { display: flex; align-items: center; gap: 9px; color: #181818; font-family: Manrope, Arial, sans-serif; font-size: 22px; font-weight: 800; line-height: 1; letter-spacing: -1.1px; white-space: nowrap; }
+.partner-brand span { padding-left: 9px; border-left: 1px solid currentColor; font-size: 8px; font-weight: 500; line-height: 15px; letter-spacing: 1.8px; }
 .document-id { text-align: right; }
 .document-id > span { display: block; font-size: 11px; letter-spacing: 1.8px; color: var(--muted); margin-bottom: 8px; }
 .document-id strong { font-size: 13px; font-weight: 500; font-variant-numeric: tabular-nums; }
@@ -153,6 +157,10 @@ h3 { font-size: 17px; line-height: 1.4; margin-bottom: 6px; }
   .sheet + .sheet { margin-top: 16px; }
   .brand-row { gap: 14px; padding-bottom: 20px; }
   .brand-row img { width: 120px; }
+  .brand-logos { gap: 10px; }
+  .brand-divider { height: 22px; }
+  .partner-brand { gap: 7px; font-size: 16px; letter-spacing: -.8px; }
+  .partner-brand span { padding-left: 7px; font-size: 6px; line-height: 11px; letter-spacing: 1.2px; }
   .document-id > span { font-size: 9px; letter-spacing: 1px; }
   .document-id strong { font-size: 11px; }
   .document-id strong span { padding: 0 4px; }
@@ -218,6 +226,12 @@ h3 { font-size: 17px; line-height: 1.4; margin-bottom: 6px; }
   .closing p { max-width: none; }
 }
 
+@media screen and (max-width: 480px) {
+  .brand-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .document-id { text-align: left; }
+  .document-id > span { margin-bottom: 4px; }
+}
+
 @media screen and (max-width: 360px) {
   .sheet { padding-inline: 17px; }
   .plan { padding-inline: 15px; }
@@ -238,6 +252,9 @@ h3 { font-size: 17px; line-height: 1.4; margin-bottom: 6px; }
   .page-footer { margin-top: auto; padding-top: 9px; font-size: 8px; }
   .brand-row { padding-bottom: 12px; }
   .brand-row img { width: 150px; }
+  .brand-divider { height: 28px; }
+  .partner-brand { font-size: 20px; letter-spacing: -1px; }
+  .partner-brand span { font-size: 7.5px; line-height: 14px; letter-spacing: 1.6px; }
   .document-id > span { font-size: 9px; }
   .document-id strong { font-size: 11.5px; }
   .hero { padding: 12px 0 12px; }
